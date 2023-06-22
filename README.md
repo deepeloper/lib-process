@@ -1,9 +1,8 @@
 # PHP-process Lock library
+[![Latest Stable Version](https://img.shields.io/packagist/v/deepeloper/lib-process.svg?style=flat-square)](https://packagist.org/packages/deepeloper/lib-process)
 [![PHP Version](https://img.shields.io/packagist/php-v/deepeloper/lib-process)](https://www.php.net/)
 [![Packagist version](https://img.shields.io/packagist/v/deepeloper/lib-process)](https://packagist.org/packages/deepeloper/lib-process)
 [![GitHub license](https://img.shields.io/github/license/deepeloper/lib-process.svg)](https://github.com/deepeloper/lib-process/blob/master/LICENSE)
-[![Build Status](https://travis-ci.com/deepeloper/lib-process.svg?branch=master)](https://travis-ci.com/deepeloper/lib-process)
-[![Code Coverage](https://codecov.io/gh/deepeloper/lib-process/branch/master/graph/badge.svg)](https://codecov.io/gh/deepeloper/lib-process)
 [![GitHub issues](https://img.shields.io/github/issues-raw/deepeloper/lib-process.svg)](https://github.com/deepeloper/lib-process/issues)
 
 ## Installing
