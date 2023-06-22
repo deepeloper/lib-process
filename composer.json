@@ -1,0 +1,44 @@
+{
+  "name": "deepeloper/lib-process",
+  "type": "library",
+  "description": "PHP-process Lock library",
+  "homepage": "https://github.com/deepeloper/lib-process",
+  "keywords": ["php", "process", "lock"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "deepeloper",
+      "homepage": "https://github.com/deepeloper",
+      "role": "lead"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=7.4"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "*",
+    "slevomat/coding-standard": "*",
+    "phpunit/phpunit": "^9"
+  },
+  "autoload": {
+    "psr-4": {
+      "deepeloper\\Lib\\Process\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "deepeloper\\Lib\\Process\\":  "tests",
+      "deepeloper\\Tests\\Lib\\Process\\": "tests/src"
+    }
+  },
+  "scripts": {
+    "phpcs": "phpcs --standard=PSR12"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}
