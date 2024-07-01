@@ -18,8 +18,6 @@ use RuntimeException;
 
 /**
  * Lock tests.
- *
- * @coversDefaultClass \deepeloper\Lib\Process\Lock
  */
 class LockTest extends LockTestCase
 {
@@ -28,8 +26,6 @@ class LockTest extends LockTestCase
 
     /**
      * Tests exception when existing is valid.
-     *
-     * @covers ::__construct
      */
     public function testExceptionWhenExistingIsValid(): void
     {
@@ -41,8 +37,6 @@ class LockTest extends LockTestCase
 
     /**
      * Tests exception when already exists.
-     *
-     * @covers ::__construct
      */
     public function testExceptionWhenExists(): void
     {
@@ -57,8 +51,6 @@ class LockTest extends LockTestCase
 
     /**
      * Tests exception when cannot destroy previous.
-     *
-     * @covers ::__construct
      */
     public function testExceptionWhenCannotDestroyPrevious(): void
     {
@@ -78,8 +70,6 @@ class LockTest extends LockTestCase
 
     /**
      * Tests exception when cannot create.
-     *
-     * @covers ::__construct
      */
     public function testExceptionWhenCannotCreate(): void
     {
@@ -99,8 +89,6 @@ class LockTest extends LockTestCase
 
     /**
      * Tests exception when lock destroyed.
-     *
-     * @covers ::validate
      */
     public function testExceptionWhenLockDestroyed(): void
     {
@@ -113,8 +101,6 @@ class LockTest extends LockTestCase
 
     /**
      * Tests exception when wrong process Id.
-     *
-     * @covers ::validate
      */
     public function testExceptionWhenWrongProcessId(): void
     {
@@ -127,8 +113,6 @@ class LockTest extends LockTestCase
 
     /**
      * Tests exception when cannot update.
-     *
-     * @covers ::update
      */
     public function testExceptionWhenCannotUpdate(): void
     {
@@ -152,8 +136,6 @@ class LockTest extends LockTestCase
 
     /**
      * Tests exception when cannot delete in destructor.
-     *
-     * @covers ::__destruct
      */
     public function testExceptionWhenCannotDelete(): void
     {
@@ -171,12 +153,6 @@ class LockTest extends LockTestCase
 
     /**
      * Tests common functionality.
-     *
-     * @covers ::__construct
-     * @covers ::__destruct
-     * @covers ::generateProcessId
-     * @covers ::validate
-     * @covers ::update
      */
     public function testCommonFunctionality(): void
     {

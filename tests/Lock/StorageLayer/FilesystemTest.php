@@ -24,8 +24,6 @@ class FilesystemTest extends LockTestCase
 {
     /**
      * Tests exception when required 'path' option missing.
-     *
-     * @covers ::__construct
      */
     public function testExceptionWhenMissingPathOption(): void
     {
@@ -36,8 +34,6 @@ class FilesystemTest extends LockTestCase
 
     /**
      * Tests exception when 'path' option isn't a string.
-     *
-     * @covers ::__construct
      */
     public function testExceptionWhenInvalodPathOption(): void
     {
@@ -48,8 +44,6 @@ class FilesystemTest extends LockTestCase
 
     /**
      * Tests exception when 'path' deleting invalid record.
-     *
-     * @covers ::delete
      */
     public function testExceptionWhenDeletingInvalidRecord(): void
     {
@@ -61,8 +55,6 @@ class FilesystemTest extends LockTestCase
 
     /**
      * Tests exception when 'path' getting invalid record.
-     *
-     * @covers ::get
      */
     public function testExceptionWhenGettingInvalidRecord(): void
     {
@@ -74,8 +66,6 @@ class FilesystemTest extends LockTestCase
 
     /**
      * Tests exception when 'path' getting invalid record modification time.
-     *
-     * @covers ::getModificationTime
      */
     public function testExceptionWhenGettingInvalidRecordModificationTime(): void
     {
@@ -87,8 +77,6 @@ class FilesystemTest extends LockTestCase
 
     /**
      * Tests exception when 'path' setting invalid record.
-     *
-     * @covers ::set
      */
     public function testExceptionWhenSettingInvalidRecord(): void
     {
@@ -101,8 +89,6 @@ class FilesystemTest extends LockTestCase
 
     /**
      * Tests exception when 'path' updating invalid record time.
-     *
-     * @covers ::updateModificationTime
      */
     public function testExceptionWhenUpdatingInvalidRecordTime(): void
     {
@@ -115,14 +101,6 @@ class FilesystemTest extends LockTestCase
 
     /**
      * Tests common functionality.
-     *
-     * @covers ::__construct
-     * @covers ::delete
-     * @covers ::exists
-     * @covers ::get
-     * @covers ::getModificationTime
-     * @covers ::set
-     * @covers ::updateModificationTime
      */
     public function testCommonFunctionality(): void
     {

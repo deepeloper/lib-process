@@ -18,8 +18,6 @@ use PHPUnit\Framework\TestCase;
 
 /**
  * Storage layer factory tests.
- *
- * @coversDefaultClass \deepeloper\Lib\Process\Lock\Storage
  */
 class StorageTest extends TestCase
 {
