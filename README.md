@@ -4,6 +4,8 @@
 [![GitHub license](https://img.shields.io/github/license/deepeloper/lib-process.svg)](https://github.com/deepeloper/lib-process/blob/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues-raw/deepeloper/lib-process.svg)](https://github.com/deepeloper/lib-process/issues)
 [![Packagist](https://img.shields.io/packagist/dt/deepeloper/lib-process.svg)](https://packagist.org/packages/deepeloper/lib-process)
+[![CI](https://github.com/deepeloper/lib-process/actions/workflows/ci.yml/badge.svg?event=push)](https://github.com/deepeloper/lib-process/actions)
+[![codecov](https://codecov.io/gh/deepeloper/lib-process/branch/main/graph/badge.svg)](https://codecov.io/gh/deepeloper/lib-process)
 
 [![Donation](https://img.shields.io/badge/Donation-Visa,%20MasterCard,%20Maestro,%20UnionPay,%20YooMoney,%20МИР-red)](https://yoomoney.ru/to/41001351141494)
 
