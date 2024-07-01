@@ -9,6 +9,10 @@
 
 [![Donation](https://img.shields.io/badge/Donation-Visa,%20MasterCard,%20Maestro,%20UnionPay,%20YooMoney,%20МИР-red)](https://yoomoney.ru/to/41001351141494)
 
+## Compatibility
+[![PHP 7.4](https://img.shields.io/badge/PHP->=7.4-%237A86B8)]()
+
+
 ## Installing
 Run `composer require deepeloper/lib-process`.
 

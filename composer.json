@@ -15,12 +15,12 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
-    "php": ">=7.4"
+    "php": ">=8.2"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "*",
     "slevomat/coding-standard": "*",
-    "phpunit/phpunit": "^9"
+    "phpunit/phpunit": "*"
   },
   "autoload": {
     "psr-4": {

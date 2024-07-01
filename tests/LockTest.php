@@ -61,7 +61,7 @@ class LockTest extends LockTestCase
         $time -= 60 * 10; // 10 minutes ago
         $this->storage->updateModificationTime($time);
         $stub = $this->getMockBuilder(Filesystem::class)
-            ->setMethodsExcept(\array_diff(\get_class_methods(Filesystem::class), ['delete']))
+            ->onlyMethods(['delete'])
             ->setConstructorArgs([['path' => $this->path]])
             ->getMock();
         $stub->method('delete')->will($this->throwException(new RuntimeException()));
@@ -80,7 +80,7 @@ class LockTest extends LockTestCase
         $time -= 60 * 10; // 10 minutes ago
         $this->storage->updateModificationTime($time);
         $stub = $this->getMockBuilder(Filesystem::class)
-            ->setMethodsExcept(\array_diff(\get_class_methods(Filesystem::class), ['set']))
+            ->onlyMethods(['set'])
             ->setConstructorArgs([['path' => $this->path]])
             ->getMock();
         $stub->method('set')->will($this->throwException(new RuntimeException()));
@@ -121,7 +121,7 @@ class LockTest extends LockTestCase
         $this->expectExceptionCode(Lock::CANNOT_UPDATE);
         $this->expectExceptionMessageMatches("/^Cannot update lock: /");
         $stub = $this->getMockBuilder(Lock::class)
-            ->setMethodsExcept(\array_diff(\get_class_methods(Lock::class), ['validate']))
+            ->onlyMethods(['validate'])
             ->setConstructorArgs([$this->storage, 1])
             ->getMock();
         $processId = $this->storage->get();
@@ -144,7 +144,7 @@ class LockTest extends LockTestCase
         $this->expectExceptionCode(Lock::CANNOT_DELETE);
         $this->expectExceptionMessageMatches("/^Cannot delete lock: /");
         $stub = $this->getMockBuilder(Filesystem::class)
-            ->setMethodsExcept(\array_diff(\get_class_methods(Filesystem::class), ['delete']))
+            ->onlyMethods(['delete'])
             ->setConstructorArgs([['path' => $this->path]])
             ->getMock();
         $stub->method('delete')->will($this->throwException(new RuntimeException()));

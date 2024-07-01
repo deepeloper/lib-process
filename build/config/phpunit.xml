@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" bootstrap="../../vendor/autoload.php" cacheResult="true" colors="true" verbose="true" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
-    <coverage>
-        <include>
-            <directory suffix=".php">../../src</directory>
-        </include>
-        <report>
-            <clover outputFile="../output/phpunit.coverage-clover.xml"/>
-            <html outputDirectory="../output/code-coverage"/>
-        </report>
-    </coverage>
-    <testsuites>
-        <testsuite name="PHP-process Lock library testsuite">
-            <directory suffix="Test.php">../../tests</directory>
-        </testsuite>
-    </testsuites>
-    <logging/>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" bootstrap="../../vendor/autoload.php" cacheResult="true" colors="true" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/11.2/phpunit.xsd" cacheDirectory=".phpunit.cache">
+  <coverage>
+    <report>
+      <clover outputFile="../output/phpunit.coverage-clover.xml"/>
+      <html outputDirectory="../output/code-coverage"/>
+    </report>
+  </coverage>
+  <testsuites>
+    <testsuite name="PHP-process Lock library testsuite">
+      <directory suffix="Test.php">../../tests</directory>
+    </testsuite>
+  </testsuites>
+  <logging/>
+  <source>
+    <include>
+      <directory suffix=".php">../../src</directory>
+    </include>
+  </source>
 </phpunit>
