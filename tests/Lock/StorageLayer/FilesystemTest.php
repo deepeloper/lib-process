@@ -17,8 +17,6 @@ use RuntimeException;
 
 /**
  * Filesystem storage layer tests.
- *
- * @coversDefaultClass \deepeloper\Lib\Process\Lock\StorageLayer\Filesystem
  */
 class FilesystemTest extends LockTestCase
 {
